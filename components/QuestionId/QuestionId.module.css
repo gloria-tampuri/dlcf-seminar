@@ -2,7 +2,8 @@
     width: 90%;
     display: flex;
         flex-direction: column;
-        margin: 10% auto;
+        margin: 5% auto;
+        /* margin-top: 2rem; */
         /* border: 1px solid white;
         padding: 2rem 1rem;
         border-radius: 30px; */
@@ -13,10 +14,11 @@
     } */
 
     .BiArrowBack{
-        margin: 1rem 0;
-        background-color: #16365D;
-        color: white;
-        width: 2rem;
+        margin-bottom: 1rem;
+        color: #16365D;
+        /* color: white; */
+        /* width: 2rem; */
+        font-size: 2rem;
         border-radius: 5px;
     }
 

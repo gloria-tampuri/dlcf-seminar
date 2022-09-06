@@ -17,12 +17,14 @@ const Questions = () => {
   }
 
     return (
-      <div className={classes.questions}>
-        {showMsg && <ThanksModal closeMsg={closeMsgHandler} />}
+      <>
+      {showMsg ? <ThanksModal closeMsg={closeMsgHandler}/> :  <div className={classes.questions}>
         <Header />
         <MarriageLogo />
         <Input openMessage={messageHandler} />
-      </div>
+      </div>}
+     
+      </>
     );
 
 }
