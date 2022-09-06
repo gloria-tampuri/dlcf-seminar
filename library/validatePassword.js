@@ -1,0 +1,18 @@
+import bcrypt from 'bcrypt';
+
+/*Using bcyrpt to hash the password
+-------------------------------START----------------------------*/
+export const hashPassword = async (password) => {
+  const salt = await bcrypt.genSalt(10);
+  const hashedPassword = await bcrypt.hash(password, salt);
+  return hashedPassword;
+};
+/*------------------------------END-----------------------------*/
+
+/*Function to compare the password
+-------------------------------START----------------------------*/
+export const comparePassword = async (password, hashedPassword) => {
+  const isPasswordMatched = await bcrypt.compare(password, hashedPassword);
+  return isPasswordMatched;
+};
+/*------------------------------END-----------------------------*/

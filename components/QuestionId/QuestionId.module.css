@@ -1,0 +1,61 @@
+.QuestionId{
+    width: 90%;
+    display: flex;
+        flex-direction: column;
+        margin: 10% auto;
+        /* border: 1px solid white;
+        padding: 2rem 1rem;
+        border-radius: 30px; */
+    }
+
+    /* .namedate{
+        margin: 2rem 0;
+    } */
+
+.topic {
+    width: fit-content;
+    margin: 2rem 0;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    background: linear-gradient(119.78deg, #c6535ba1 -28.08%, #16365db6 133.48%);
+        border-radius: 5px;
+    margin: 1.2rem 0 0.2rem 0;
+    }
+
+.QuestionId p{
+    font-size: 20px;
+}
+.date{
+    font-size: 0.9rem;
+    color: #16365D;
+}
+.date span{
+color:#8D8B8B;
+font-size: 0.9rem;
+}
+
+.QuestionId button {
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 0.5rem;
+    background: linear-gradient(119.78deg, #16365D -28.08%, #C6535B 133.48%);
+        box-shadow: 0px 16px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+    margin:2rem auto;
+}
+.QuestionId button:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 640px){
+    .QuestionId{
+        max-width:500px;
+        margin :5% auto ;
+        border: 1px solid white;
+        padding:  2rem;
+        border-radius: 30px;
+    }
+}

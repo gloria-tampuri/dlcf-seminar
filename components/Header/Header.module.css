@@ -1,0 +1,24 @@
+.Header{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.logowords{
+justify-self: center;
+text-align: center;
+}
+
+.logowords h2{
+    color: #16365D;
+}
+
+.logowords h3{
+    color:#C6535B ;
+    font-weight: 400;
+}
+
