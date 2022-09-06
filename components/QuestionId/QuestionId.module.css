@@ -12,6 +12,14 @@
         margin: 2rem 0;
     } */
 
+    .BiArrowBack{
+        margin: 1rem 0;
+        background-color: #16365D;
+        color: white;
+        width: 2rem;
+        border-radius: 5px;
+    }
+
 .topic {
     width: fit-content;
     margin: 2rem 0;

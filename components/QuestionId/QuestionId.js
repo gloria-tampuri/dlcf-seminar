@@ -2,6 +2,8 @@ import React from 'react'
 import {format,formatRelative} from 'date-fns'
 import { useQuestion } from '../../hooks/useQuestion';
 import classes from './QuestionId.module.css';
+import { BiArrowBack} from 'react-icons/bi'
+import Link from 'next/link';
 
 const QuestionId = ({ id }) => {
   console.log(id);
@@ -40,7 +42,9 @@ const QuestionId = ({ id }) => {
     <>
       {data && (
         <div className={classes.QuestionId}>
-         
+        <Link href={`/seminar/questions/`}>
+        <BiArrowBack className={classes.BiArrowBack}/>
+        </Link>
          <div className={classes.namedate}>
          <h4 className={classes.name}>
             Name: <span>{data.name}</span>
