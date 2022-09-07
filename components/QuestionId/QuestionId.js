@@ -2,7 +2,7 @@ import React from 'react'
 import {format,formatRelative} from 'date-fns'
 import { useQuestion } from '../../hooks/useQuestion';
 import classes from './QuestionId.module.css';
-import {MdOutlineKeyboardBackspace} from 'react-icons/Md'
+import {MdOutlineKeyboardBackspace} from 'react-icons/md'
 import Link from 'next/link';
 
 const QuestionId = ({ id }) => {
