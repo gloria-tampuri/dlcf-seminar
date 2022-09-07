@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import QuestionList from '../../../components/QuestionsList/QuestionList';
 import Spinner from '../../../components/UI/Spinner';
 import { useQuestions } from '../../../hooks/useQuestions';
@@ -18,10 +18,10 @@ const Questions = () => {
   }
 
   return (
-    <div>
-       <Header />
-    { isLoading ? <Spinner/> : <QuestionList questions={questions.questions} />}
-    </div>
+  <Layout>
+        { isLoading ? <Spinner/> : <QuestionList questions={questions.questions} />}
+
+  </Layout>
   );
 };
 

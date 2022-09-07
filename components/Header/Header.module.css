@@ -9,6 +9,7 @@
     background-color: white;
     top: 0;
     margin-bottom: 10vh;
+    z-index: 10;
   
 }
 

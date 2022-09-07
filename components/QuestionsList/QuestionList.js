@@ -28,9 +28,10 @@ const QuestionList = ({ questions }) => {
                 <span className={classes.spanBlue}></span>
               )}
               <Link
-                className={`'classes.plink' ${question.isAnswered ? 'classes.link' : ''}`}
+               
                 href={`/seminar/questions/${question._id}`}
-              ><a >{`${question.question.substring(0, 28)}...`}</a></Link>
+              ><a  className={question.isAnswered === true ? classes.link : classes.activelink}>{`${question.question.substring(0, 28)}...`}</a>
+              </Link>
             </li>
           ))}
         </ul>
