@@ -3,14 +3,16 @@ import {format,formatRelative} from 'date-fns'
 import { useQuestion } from '../../hooks/useQuestion';
 import classes from './QuestionId.module.css';
 import {MdOutlineKeyboardBackspace} from 'react-icons/md'
-import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 const QuestionId = ({ id }) => {
   console.log(id);
   const { question } = useQuestion(id);
   const data = question?.question;
 
-  console.log(data);
+   const router = useRouter()
+
+  console.log(router);
 
   const handleAnswer = () => {
 
@@ -42,9 +44,7 @@ const QuestionId = ({ id }) => {
     <>
       {data && (
         <div className={classes.QuestionId}>
-        <Link href={`/seminar/questions/`}>
-        <MdOutlineKeyboardBackspace className={classes.BiArrowBack}/>
-        </Link>
+          <MdOutlineKeyboardBackspace onClick={()=>router.push('/seminar/questions')} className={classes.BiArrowBack}/>
          <div className={classes.namedate}>
          <h4 className={classes.name}>
             Name: <span>{data.name}</span>
