@@ -51,7 +51,7 @@ const Input = ({openMessage}) => {
       <form onSubmit={handleSubmit}>
         <div className={classes.section}>
           <label htmlFor='name'> Your name (optional)</label>
-          <input type='text' id='name' ref={nameRef} disabled={isLoading} />
+          <input type='text' id='name' ref={nameRef} placeholder='Type name here'disabled={isLoading} />
         </div>
 
         <div className={classes.section}>
@@ -59,7 +59,7 @@ const Input = ({openMessage}) => {
           <textarea
           required
             id='question'
-            placeholder='Comment text.'
+            placeholder='Type question here..'
             ref={questionRef}
             disabled={isLoading}
           />
