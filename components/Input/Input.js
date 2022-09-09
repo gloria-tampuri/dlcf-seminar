@@ -1,9 +1,13 @@
 import { useRef, useState } from 'react';
 import classes from './Input.module.css';
+import SpinnerTwo from '../UI/SpinnerTwo'
 
 const Input = ({openMessage}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [showMsg,setShowMsg] =useState(false)
+ 
+
+
   const nameRef = useRef();
   const questionRef = useRef();
 
@@ -61,9 +65,10 @@ const Input = ({openMessage}) => {
           />
         </div>
 
-        <button type='submit' disabled={isLoading}>
-          Send
+        <button className={isLoading === true ? classes.notactive : classes.btn} type='submit' disabled={isLoading}>
+         {isLoading ? <SpinnerTwo/> : 'Send'}
         </button>
+
       </form>
     </div>
   );

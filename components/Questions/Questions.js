@@ -7,6 +7,7 @@ import ThanksModal from '../ThanksModal/ThanksModal';
 
 const Questions = () => {
   const [showMsg, setShowMsg] =useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const messageHandler=()=>{
     setShowMsg(true)

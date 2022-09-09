@@ -6,6 +6,9 @@
     background-color: rgba(0, 0, 0, 0.507);
     z-index: 10;
     overflow: hidden;
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .wrap{
@@ -13,12 +16,16 @@
     width:80%;
     padding: 1rem;
     font-size: 20px;
-    top: 30%;
-    left: 3rem;
+    /* top: 30%;
+    left: 3rem; */
     height:fit-content;
     background-color: white;
     text-align: center;
     border-radius: 30px;
+}
+
+.wrap p{
+    color: #5d5d5d;
 }
 .wrap span{
     
