@@ -66,3 +66,11 @@ h6 {
 .Page {
   min-height: 100vh;
 }
+/*CUSTOM VARIABLES
+-------------------------------START----------------------------*/
+:root {
+  --gradient-one: linear-gradient(113.49deg, #C6535B 6.99%, #16365dc9 94.29%);
+  --gradient-two: linear-gradient(113.49deg, #8b5d60 6.99%, rgba(49, 71, 99, 0.79) 94.29%);
+}
+
+/*------------------------------END-----------------------------*/

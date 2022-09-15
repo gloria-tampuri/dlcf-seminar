@@ -15,10 +15,8 @@ const QuestionList = ({ questions }) => {
 
   return (
     <div className='Page'>
-     
       <div className={classes.listpage}>
         <h1>Questions ({questions.length})</h1>
-
         <ul className={classes.list}>
           {questions.map((question) => (
             <li key={question._id} className={classes.eachquestion}>
@@ -27,10 +25,14 @@ const QuestionList = ({ questions }) => {
               ) : (
                 <span className={classes.spanBlue}></span>
               )}
-              <Link
-               
-                href={`/seminar/questions/${question._id}`}
-              ><a  className={question.isAnswered === true ? classes.link : classes.activelink}>{`${question.question.substring(0, 28)}...`}</a>
+              <Link href={`/seminar/questions/${question._id}`}>
+                <a
+                  className={
+                    question.isAnswered === true
+                      ? classes.link
+                      : classes.activelink
+                  }
+                >{`${question.question.substring(0, 28)}...`}</a>
               </Link>
             </li>
           ))}

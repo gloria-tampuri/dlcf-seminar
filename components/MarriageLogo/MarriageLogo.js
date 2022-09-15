@@ -1,13 +1,12 @@
 import React from 'react'
-import classes from './MarriageLogo.module.css'
+import classes from './MarriageLogo.module.css';
 
-
-const MarriageLogo = () => {
+const MarriageLogo = (props) => {
   return (
     <div className={classes.marriageLogo}>
-       <p>Question Portal</p>
+      <p>{props.name}</p>
     </div>
-  )
-}
+  );
+};
 
 export default MarriageLogo

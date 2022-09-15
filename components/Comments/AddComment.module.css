@@ -1,0 +1,82 @@
+.AddComment {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 2rem;
+}
+
+.AddComment h3 {
+    color: #474242
+}
+
+.AddComment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddComment h3 {
+    border-top: 1px solid #aaaaaa;
+    padding-top: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.4rem;
+}
+
+.AddComment button {
+    background-color: #C6535B;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    outline: 2px solid transparent;
+}
+
+.Control {
+    display: flex;
+    margin-bottom: 1.2rem;
+    flex-direction: column;
+}
+
+.Control textarea {
+    font-family: inherit;
+    outline: none;
+    font-size: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #474242;
+}
+
+.Control input {
+    font-family: inherit;
+    outline: none;
+    font-size: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #474242;
+}
+
+.Control textarea:focus,
+.Control input:focus {
+    border-color: #16365dc9;
+}
+
+/* Media Queries 
+-------------------------------START----------------------------*/
+@media (min-width: 640px) {
+    .AddComment {
+        max-width: 500px;
+        margin: 5% auto;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+}
+
+/*------------------------------END-----------------------------*/

@@ -36,8 +36,6 @@ const Input = ({openMessage}) => {
     });
     const result = await response.json()
 
-    console.log(result);
-
     
     clearFields();
     if(result.status === 201){
@@ -49,15 +47,28 @@ const Input = ({openMessage}) => {
   return (
     <div className={classes.formsection}>
       <form onSubmit={handleSubmit}>
+        <div className={classes.notice}>
+          <p>
+            Please for direct answers, contact <span>0245351832</span>. However,
+            questions will be answered at the seminar{' '}
+            <span>(DLCF REGENT, MENDSKROM)</span>
+          </p>
+        </div>
         <div className={classes.section}>
           <label htmlFor='name'> Your name (optional)</label>
-          <input type='text' id='name' ref={nameRef} placeholder='Type name here'disabled={isLoading} />
+          <input
+            type='text'
+            id='name'
+            ref={nameRef}
+            placeholder='Type name here'
+            disabled={isLoading}
+          />
         </div>
 
         <div className={classes.section}>
           <label htmlFor='question'>Question</label>
           <textarea
-          required
+            required
             id='question'
             placeholder='Type question here..'
             ref={questionRef}
@@ -65,10 +76,13 @@ const Input = ({openMessage}) => {
           />
         </div>
 
-        <button className={isLoading === true ? classes.notactive : classes.btn} type='submit' disabled={isLoading}>
-         {isLoading ? <SpinnerTwo/> : 'Send'}
+        <button
+          className={isLoading === true ? classes.notactive : classes.btn}
+          type='submit'
+          disabled={isLoading}
+        >
+          {isLoading ? <SpinnerTwo /> : 'Send'}
         </button>
-
       </form>
     </div>
   );
